@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Bandenoverzicht per Ondergrond</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem; }
+    h2 { margin-top: 3rem; }
+    .band-card {
+      border: 1px solid #ccc;
+      border-left: 6px solid #4CAF50;
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .band-card img {
+      float: right;
+      width: 80px;
+      height: auto;
+      margin-left: 1rem;
+    }
+    select, button {
+      padding: 0.5rem;
+      margin: 1rem 0.5rem 1rem 0;
+    }
+    .gekocht-label {
+      color: green;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bandenoverzicht per Ondergrond</h1>
+
+  <label for="merkSelect">Kies een merk:</label>
+  <select id="merkSelect">
+    <option value="">-- Selecteer merk --</option>
+  </select>
+
+  <label for="modelSelect">Kies een model:</label>
+  <select id="modelSelect" disabled>
+    <option value="">-- Selecteer model --</option>
+  </select>
+
+  <div id="bandDetail"></div>
+
+  <h2>Selecteer een ondergrond met score 5</h2>
+  <label for="grondSelect">Ondergrond:</label>
+  <select id="grondSelect">
+    <option value="">-- Kies een ondergrond --</option>
+    <option value="asfalt">Asfalt</option>
+    <option value="modder">Modder</option>
+    <option value="losZand">Los zand</option>
+    <option value="duinzand">Duinzand</option>
+    <option value="alpen">Lange Alpen beklimmingen</option>
+    <option value="schotterweg">Schotterweg in de bergen</option>
+    <option value="groteKeien">Grote Keien in de bergen</option>
+  </select>
+
+  <div id="grondResultaten"></div>
+
+  <script src="bandendata.js"></script>
+  <script src="bandenaangeschaft.js"></script>
+  <script>
+    const merkSelect = document.getElementById("merkSelect");
+    const modelSelect = document.getElementById("modelSelect");
+    const bandDetail = document.getElementById("bandDetail");
+
+    const merken = [...new Set(bandenData.map(b => b.merk))];
+    merken.forEach(merk => {
+      const opt = document.createElement("option");
+      opt.value = merk;
+      opt.textContent = merk;
+      merkSelect.appendChild(opt);
+    });
+
+    merkSelect.addEventListener("change", () => {
+      const merk = merkSelect.value;
+      bandDetail.innerHTML = "";
+      modelSelect.innerHTML = '<option value="">-- Selecteer model --</option>';
+      modelSelect.disabled = !merk;
+
+      if (merk) {
+        const modellen = bandenData
+          .filter(b => b.merk === merk)
+          .sort((a, b) => a.model.localeCompare(b.model));
+
+        modellen.forEach(band => {
+          const opt = document.createElement("option");
+          opt.value = band.model;
+          opt.textContent = band.model;
+          modelSelect.appendChild(opt);
+        });
+      }
+    });
+
+    modelSelect.addEventListener("change", () => {
+      const merk = merkSelect.value;
+      const model = modelSelect.value;
+      bandDetail.innerHTML = "";
+
+      if (merk && model) {
+        const band = bandenData.find(b => b.merk === merk && b.model === model);
+        if (band) {
+          const gekocht = gekochteBanden[band.merk + ' ' + band.model];
+          const gekochtHTML = gekocht ? "<div class='gekocht-label'>✅ Aangeschaft</div>" : "";
+
+          bandDetail.innerHTML = `
+            <div class="band-card">
+              <img src="images/${band.model.toLowerCase().replace(/\s+/g, '-')}.webp" alt="${band.model}" onerror="this.style.display='none'">
+              <strong>${band.merk} - ${band.model}</strong><br>
+              ${gekochtHTML}
+              Gewicht: ${band.gewicht} g<br>
+              Positie: ${band.positie}<br>
+              Druk: ${band.druk}<br>
+              Eigenschappen: ${band.eigenschappen}<br>
+              Velgadvies: ${band.velgadvies}<br><br>
+              Ondergrond scores:
+              <ul>
+                ${Object.entries(band.ondergronden).map(([k,v]) => `<li>${k}: ${v}</li>`).join("")}
+              </ul>
+            </div>
+          `;
+        }
+      }
+    });
+
+    const grondSelect = document.getElementById("grondSelect");
+    const grondResultaten = document.getElementById("grondResultaten");
+
+    grondSelect.addEventListener("change", () => {
+      const geselecteerd = grondSelect.value;
+      grondResultaten.innerHTML = "";
+
+      if (geselecteerd) {
+        const banden = bandenData
+          .filter(b => b.ondergronden[geselecteerd] === 5)
+          .sort((a, b) => a.model.localeCompare(b.model)); // <-- sortering toegevoegd
+
+        banden.forEach(band => {
+          const gekocht = gekochteBanden[band.merk + ' ' + band.model];
+          const gekochtHTML = gekocht ? "<div class='gekocht-label'>✅ Aangeschaft</div>" : "";
+
+          grondResultaten.innerHTML += `
+            <div class="band-card">
+              <img src="images/${band.model.toLowerCase().replace(/\s+/g, '-')}.webp" alt="${band.model}" onerror="this.style.display='none'">
+              <strong>${band.merk} - ${band.model}</strong><br>
+              ${gekochtHTML}
+              <em>Score op ${geselecteerd}: ${band.ondergronden[geselecteerd]}</em><br>
+              Gewicht: ${band.gewicht} g<br>
+              Positie: ${band.positie}<br>
+              Druk: ${band.druk}<br>
+              Eigenschappen: ${band.eigenschappen}<br>
+              Velgadvies: ${band.velgadvies}
+            </div>
+          `;
+        });
+      }
+    });
+  </script>
+</body>
+</html>
