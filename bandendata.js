@@ -910,7 +910,7 @@ const bandenData = [
   },
   {
   merk: "Schwalbe",
-  model: "Racing ralph 29x2.25 super race evo addix speed",
+  model: "Racing Ralph 29x2.25 super race evo addix speed",
   gewicht: 640,  // Super Race casing 29x2.25 = 640 g :contentReference[oaicite:1]{index=1}
   ondergronden: {
     asfalt: 5,
