@@ -92,7 +92,7 @@ const bandenData = [
   },
   {
     merk: "Maxxis",
-    model: "Rekon race 29x2.4 WT 120tpi exo",
+    model: "Rekon Race 29x2.4 WT 120tpi exo",
     gewicht: 851,
     ondergronden: {
       asfalt: 4,
@@ -344,7 +344,7 @@ const bandenData = [
   },
   {
     merk: "Schwalbe",
-    model: "Thunder burt 29x2.1 super race evo addix speed",
+    model: "Thunder Burt 29x2.1 super race evo addix speed",
     gewicht: 619,
     ondergronden: {
       asfalt: 5,
@@ -362,7 +362,7 @@ const bandenData = [
   },
   {
     merk: "Schwalbe",
-    model: "Thunder burt 29x2.35 super race evo addix speed",
+    model: "Thunder Burt 29x2.35 super race evo addix speed",
     gewicht: 713,
     ondergronden: {
       asfalt: 5,
@@ -380,7 +380,7 @@ const bandenData = [
   },
   {
     merk: "Schwalbe",
-    model: "Thunder burt 29x2.1 evo pace star 3",
+    model: "Thunder Burt 29x2.1 evo pace star 3",
     gewicht: 609,
     ondergronden: {
       asfalt: 4,
@@ -398,7 +398,7 @@ const bandenData = [
   },
   {
     merk: "Schwalbe",
-    model: "Racing ray 29x2.35 super race evo addix speed",
+    model: "Racing Ray 29x2.35 super race evo addix speed",
     gewicht: 767,
     ondergronden: {
       asfalt: 3,
@@ -416,7 +416,7 @@ const bandenData = [
   },
   {
     merk: "Schwalbe",
-    model: "Wicked will 29x2.4 super ground evo addix speedgrip",
+    model: "Wicked Will 29x2.4 super ground evo addix speedgrip",
     gewicht: 893,
     ondergronden: {
       asfalt: 3,
