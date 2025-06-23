@@ -92,7 +92,7 @@ const bandenData = [
   },
   {
     merk: "Maxxis",
-    model: "rekon race 29x2.4 WT 120tpi exo",
+    model: "Rekon race 29x2.4 WT 120tpi exo",
     gewicht: 851,
     ondergronden: {
       asfalt: 4,
@@ -110,7 +110,7 @@ const bandenData = [
   },
   {
     merk: "Maxxis",
-    model: "aspen 29x2.1 60psi 120tpi",
+    model: "Aspen 29x2.1 60psi 120tpi",
     gewicht: 583,
     ondergronden: {
       asfalt: 4,
@@ -128,7 +128,7 @@ const bandenData = [
   },
   {
     merk: "Maxxis",
-    model: "crosmark 29x2.1 60psi",
+    model: "Crosmark 29x2.1 60psi",
     gewicht: 666,
     ondergronden: {
       asfalt: 4,
@@ -146,7 +146,7 @@ const bandenData = [
   },
   {
     merk: "Maxxis",
-    model: "minion SS 29x2.3 60psi exo",
+    model: "Minion SS 29x2.3 60psi exo",
     gewicht: 847,
     ondergronden: {
       asfalt: 3,
@@ -164,7 +164,7 @@ const bandenData = [
   },
   {
     merk: "Maxxis",
-    model: "forekaster 29x2.35 60psi 120tpi",
+    model: "Forekaster 29x2.35 60psi 120tpi",
     gewicht: 787,
     ondergronden: {
       asfalt: 3,
@@ -344,7 +344,7 @@ const bandenData = [
   },
   {
     merk: "Schwalbe",
-    model: "thunder burt 29x2.1 super race evo addix speed",
+    model: "Thunder burt 29x2.1 super race evo addix speed",
     gewicht: 619,
     ondergronden: {
       asfalt: 5,
@@ -362,7 +362,7 @@ const bandenData = [
   },
   {
     merk: "Schwalbe",
-    model: "thunder burt 29x2.35 super race evo addix speed",
+    model: "Thunder burt 29x2.35 super race evo addix speed",
     gewicht: 713,
     ondergronden: {
       asfalt: 5,
@@ -380,7 +380,7 @@ const bandenData = [
   },
   {
     merk: "Schwalbe",
-    model: "thunder burt 29x2.1 evo pace star 3",
+    model: "Thunder burt 29x2.1 evo pace star 3",
     gewicht: 609,
     ondergronden: {
       asfalt: 4,
@@ -398,7 +398,7 @@ const bandenData = [
   },
   {
     merk: "Schwalbe",
-    model: "racing ray 29x2.35 super race evo addix speed",
+    model: "Racing ray 29x2.35 super race evo addix speed",
     gewicht: 767,
     ondergronden: {
       asfalt: 3,
@@ -416,7 +416,7 @@ const bandenData = [
   },
   {
     merk: "Schwalbe",
-    model: "wicked will 29x2.4 super ground evo addix speedgrip",
+    model: "Wicked will 29x2.4 super ground evo addix speedgrip",
     gewicht: 893,
     ondergronden: {
       asfalt: 3,
@@ -907,5 +907,257 @@ const bandenData = [
   positie: "Voor",
   eigenschappen: "Maximale grip, stevige trailband",
   velgadvies: "25–30 mm"
+  },
+  {
+  merk: "Schwalbe",
+  model: "Racing Ralph 29x2.25 Super Race Addix Speed",
+  gewicht: 640,  // Super Race casing 29x2.25 = 640 g :contentReference[oaicite:1]{index=1}
+  ondergronden: {
+    asfalt: 5,
+    modder: 2,
+    losZand: 2,
+    duinzand: 1,
+    alpen: 3,
+    schotterweg: 4,
+    groteKeien: 3
+  },
+  druk: "1.8 - 3.7 bar",  // aangegeven op 57–622 maat :contentReference[oaicite:2]{index=2}
+  positie: "Achter",
+  eigenschappen: "Lichtgewicht XC‑raceband, uitstekende acceleratie en bochtengrip",
+  velgadvies: "19–29 mm"
+  },
+  {
+  merk: "Vittoria",
+  model: "Barzo Graphene 2.0 XC Race 29x2.25",
+  gewicht: 660,  // 660 g volgens Vittoria & Bike Tires Direct :contentReference[oaicite:3]{index=3}
+  ondergronden: {
+    asfalt: 4,
+    modder: 4,
+    losZand: 3,
+    duinzand: 2,
+    alpen: 5,
+    schotterweg: 5,
+    groteKeien: 5
+  },
+  druk: "1.7 - 2.3 bar",
+  positie: "Voor/Achter",
+  eigenschappen: "4C Graphene‑2.0 compound, snellend maar met stevige knoppen, all‑round XC grip",
+  velgadvies: "25–30 mm"
+  },
+  {
+  merk: "Vittoria",
+  model: "Barzo Graphene 2.0 XC Race 29x2.35",
+  gewicht: 700,  // 700 g voor 2.35 maat :contentReference[oaicite:4]{index=4}
+  ondergronden: {
+    asfalt: 4,
+    modder: 4,
+    losZand: 3,
+    duinzand: 2,
+    alpen: 5,
+    schotterweg: 5,
+    groteKeien: 5
+  },
+  druk: "1.7 - 2.3 bar",
+  positie: "Voor/Achter",
+  eigenschappen: "Brede versie van Barzo, meer grip en stabiliteit, nog steeds racegericht",
+  velgadvies: "25–30 mm"
+  },
+  {
+  merk: "Specialized",
+  model: "Air Trak Grid Lite T5/T7 TLR XC",
+  gewicht: 570,
+  ondergronden: {
+    asfalt: 5,
+    modder: 2,
+    losZand: 3,
+    duinzand: 2,
+    alpen: 4,
+    schotterweg: 4,
+    groteKeien: 3
+  },
+  druk: "1.6 - 3.4 bar",
+  positie: "Voor/Achter",
+  eigenschappen: "Lichtste XC‑raceband met Grid Lite en T5 center / T7 sidewalls",
+  velgadvies: "21–27 mm"
+  },
+  {
+  merk: "Specialized",
+  model: "Renegade Control 2Bliss Ready",
+  gewicht: 645,
+  ondergronden: {
+    asfalt: 4,
+    modder: 2,
+    losZand: 3,
+    duinzand: 2,
+    alpen: 4,
+    schotterweg: 4,
+    groteKeien: 3
+  },
+  druk: "1.7 - 3.4 bar",
+  positie: "Voor/Achter",
+  eigenschappen: "Fast rolling XC, T5 compound, meerdere breedtes",
+  velgadvies: "23–30 mm"
+  },
+  {
+  merk: "Specialized",
+  model: "Fast Trak GRID 2Bliss Ready T7",
+  gewicht: 800,
+  ondergronden: {
+    asfalt: 4,
+    modder: 4,
+    losZand: 3,
+    duinzand: 2,
+    alpen: 5,
+    schotterweg: 5,
+    groteKeien: 4
+  },
+  druk: "1.7 - 3.4 bar",
+  positie: "Voor/Achter",
+  eigenschappen: "GRID casing met T7 compound voor grip en bescherming",
+  velgadvies: "25–30 mm"
+  },
+  {
+  merk: "Specialized",
+  model: "Ground Control GRID 2Bliss Ready T7",
+  gewicht: 870,
+  ondergronden: {
+    asfalt: 3,
+    modder: 4,
+    losZand: 3,
+    duinzand: 2,
+    alpen: 5,
+    schotterweg: 5,
+    groteKeien: 5
+  },
+  druk: "1.7 - 3.4 bar",
+  positie: "Voor",
+  eigenschappen: "Trail‑georiënteerde all‑rounder met extra grip en stevigheid",
+  velgadvies: "25–30 mm"
+  },
+  {
+  merk: "Specialized",
+  model: "Ground Control Control 2Bliss Ready T5",
+  gewicht: 773,
+  ondergronden: {
+    asfalt: 4,
+    modder: 3,
+    losZand: 3,
+    duinzand: 2,
+    alpen: 5,
+    schotterweg: 5,
+    groteKeien: 4
+  },
+  druk: "1.7 - 3.4 bar",
+  positie: "Achter",
+  eigenschappen: "60 TPI, Control casing met T5 compound, licht en robuust",
+  velgadvies: "23–30 mm"
+  },
+  {
+  merk: "Specialized",
+  model: "Cannibal GRID Gravity 2Bliss Ready T9",
+  gewicht: 1050,
+  ondergronden: {
+    asfalt: 2,
+    modder: 5,
+    losZand: 4,
+    duinzand: 3,
+    alpen: 5,
+    schotterweg: 5,
+    groteKeien: 5
+  },
+  druk: "1.7 - 3.4 bar",
+  positie: "Voor",
+  eigenschappen: "Gravity‑gerichte band, grof profiel met T9 compound voor grip op ruwer terrein",
+  velgadvies: "30–35 mm"
+  },
+  {
+  merk: "Specialized",
+  model: "Purgatory GRID 2Bliss Ready T9",
+  gewicht: 1000,
+  ondergronden: {
+    asfalt: 2,
+    modder: 5,
+    losZand: 4,
+    duinzand: 3,
+    alpen: 5,
+    schotterweg: 5,
+    groteKeien: 5
+  },
+  druk: "1.7 - 3.4 bar",
+  positie: "Voor/Achter",
+  eigenschappen: "Gravity XC/trail, T9 compound, robuust en veelzijdig",
+  velgadvies: "30–35 mm"
+  },
+  {
+  merk: "Specialized",
+  model: "Purgatory GRID Trail 2Bliss Ready T9",
+  gewicht: 1000,
+  ondergronden: {
+    asfalt: 2,
+    modder: 5,
+    losZand: 4,
+    duinzand: 3,
+    alpen: 5,
+    schotterweg: 5,
+    groteKeien: 5
+  },
+  druk: "1.7 - 3.4 bar",
+  positie: "Voor/Achter",
+  eigenschappen: "Trail versie van Purgatory, balans tussen XC en stevige trail",
+  velgadvies: "30–35 mm"
+  },
+  {
+  merk: "Specialized",
+  model: "Fast Trak GRID Lite T5/T7 TLR XC",
+  gewicht: 650,
+  ondergronden: {
+    asfalt: 4,
+    modder: 3,
+    losZand: 3,
+    duinzand: 2,
+    alpen: 5,
+    schotterweg: 5,
+    groteKeien: 4
+  },
+  druk: "1.7 - 3.4 bar",
+  positie: "Voor/Achter",
+  eigenschappen: "Licht maar meer bescherming dan de Air Trak, T5/T7 compounds",
+  velgadvies: "25–30 mm"
+  },
+  {
+  merk: "Specialized",
+  model: "Air Trak Flex Lite T5/T7 TLR XC",
+  gewicht: 600,
+  ondergronden: {
+    asfalt: 5,
+    modder: 2,
+    losZand: 3,
+    duinzand: 2,
+    alpen: 4,
+    schotterweg: 4,
+    groteKeien: 3
+  },
+  druk: "1.6 - 3.4 bar",
+  positie: "Voor/Achter",
+  eigenschappen: "Flex Lite casing voor extra comfort, minimalistisch XC",
+  velgadvies: "21–27 mm"
+  },
+  {
+  merk: "Specialized",
+  model: "Fast Trak Flex Lite T5/T7 TLR XC",
+  gewicht: 630,
+  ondergronden: {
+    asfalt: 4,
+    modder: 3,
+    losZand: 3,
+    duinzand: 2,
+    alpen: 5,
+    schotterweg: 4,
+    groteKeien: 4
+  },
+  druk: "1.7 - 3.4 bar",
+  positie: "Voor/Achter",
+  eigenschappen: "Flex Lite casing met snellere profiel, race + comfort",
+  velgadvies: "21–27 mm"
   }
   ];
