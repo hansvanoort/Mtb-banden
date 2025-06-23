@@ -272,7 +272,7 @@ const bandenData = [
   },
   {
     merk: "Specialized",
-    model: "Renegade Control 2Bliss 29x2.35",
+    model: "S-Works Renegade 2Bliss Ready T5/T7 29x2.35",
     gewicht: 645,
     ondergronden: {
       asfalt: 4,
@@ -290,7 +290,7 @@ const bandenData = [
   },
   {
     merk: "Specialized",
-    model: "Fast Trak Control 2Bliss 29x2.35",
+    model: "S-Works Fast Trak Control 2Bliss Ready 29x2.35",
     gewicht: 660,
     ondergronden: {
       asfalt: 3,
@@ -910,7 +910,7 @@ const bandenData = [
   },
   {
   merk: "Schwalbe",
-  model: "Racing Ralph 29x2.25 Super Race Addix Speed",
+  model: "Racing ralph 29x2.25 super race evo addix speed",
   gewicht: 640,  // Super Race casing 29x2.25 = 640 g :contentReference[oaicite:1]{index=1}
   ondergronden: {
     asfalt: 5,
@@ -928,7 +928,7 @@ const bandenData = [
   },
   {
   merk: "Vittoria",
-  model: "Barzo Graphene 2.0 XC Race 29x2.25",
+  model: "Barzo graphene 2.0 xc race 29x2.25",
   gewicht: 660,  // 660 g volgens Vittoria & Bike Tires Direct :contentReference[oaicite:3]{index=3}
   ondergronden: {
     asfalt: 4,
@@ -946,7 +946,7 @@ const bandenData = [
   },
   {
   merk: "Vittoria",
-  model: "Barzo Graphene 2.0 XC Race 29x2.35",
+  model: "Barzo graphene 2.0 xc race 29x2.35",
   gewicht: 700,  // 700 g voor 2.35 maat :contentReference[oaicite:4]{index=4}
   ondergronden: {
     asfalt: 4,
